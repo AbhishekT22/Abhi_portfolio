@@ -40,9 +40,9 @@ $(document).ready(function () {
     // <!-- emailjs to mail contact form data -->
     // <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
     $("#contact-form").submit(function (event) {
-        emailjs.init("DUAAC70487LqbuG-U");
+        emailjs.init("q5QAgn0W78oqIGb-j");
 
-        emailjs.sendForm('service_h2mvvcg', 'template_dmdx7jj', '#contact-form')
+        emailjs.sendForm('service_ei58ffe', 'template_di76gdp', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
@@ -60,8 +60,8 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Divyansh Trivedi";
-            $("#favicon").attr("href", "assets/images/pic.jfif");
+            document.title = "Portfolio | Abhishek Kumar";
+            $("#favicon").attr("href", "assets/images/abhi.jpeg");
         }
         else {
             document.title = "Come Back To Portfolio";
